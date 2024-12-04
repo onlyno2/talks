@@ -39,7 +39,7 @@ overviewSnapshots: true
 
 ---
 
-![image](./assets/start.jpeg)
+![image](./assets/network/start.jpeg)
 
 <style>
 img {
@@ -57,7 +57,7 @@ img {
 
 複数のデバイスを接続して, 相互に通信できるようにするシステム
 
-![network1](./assets/network1.svg)
+![network1](./assets/network/network1.svg)
 
 <style>
 img {
@@ -86,7 +86,7 @@ img {
 
 ---
 
-![osi_tcpip](./assets/osi_tcpip.png)
+![osi_tcpip](./assets/network/osi_tcpip.png)
 
 <style>
   img {
@@ -100,7 +100,7 @@ img {
 
 ---
 
-![osi_tcpip_sample](./assets/osi_tcpip_sample.png)
+![osi_tcpip_sample](./assets/network/osi_tcpip_sample.png)
 
 <style>
   img {
@@ -193,13 +193,13 @@ RFC 1918 で定義されている IP アドレス
 
 ---
 
-![private_ip](./assets/private_ip.svg)
+![private_ip](./assets/network/private_ip.svg)
 
 ---
 
 # NAT (Network Address Translation)
 
-![nat](./assets/nat.svg)
+![nat](./assets/network/nat.svg)
 
 ---
 
@@ -208,7 +208,7 @@ RFC 1918 で定義されている IP アドレス
 基本的にはデバイスが直接接続していない.<br>
 そのため, ルーターを使って通信する
 
-![route_table](./assets/route_table.svg)
+![route_table](./assets/network/route_table.svg)
 
 参考: [AWS VPC ルートテーブル](https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/VPC_Route_Tables.html)
 
@@ -228,10 +228,10 @@ layout: two-cols-header
 
 <div v-click="1">
   cat /etc/hosts
-  <img class="w-3/4 h-60" alt="hosts" src="./assets/hosts.png" />
+  <img class="w-3/4 h-60" alt="hosts" src="./assets/network/hosts.png" />
 
   ifconfig
-  <img class="w-3/4" alt="loopback" src="./assets/loopback.png" />
+  <img class="w-3/4" alt="loopback" src="./assets/network/loopback.png" />
 
   loopback はルーティング必要ない
 </div>
@@ -239,7 +239,7 @@ layout: two-cols-header
 ::right::
 
 <div v-click="2">
-  <img alt="localhost" src="./assets/localhost.svg" />
+  <img alt="localhost" src="./assets/network/localhost.svg" />
 </div>
 
 <style>
@@ -256,7 +256,7 @@ layout: two-cols-header
 
 ::left::
 
-![nokotan_thinking](./assets/nokotan_thinking.jpg)
+![nokotan_thinking](./assets/network/nokotan_thinking.jpg)
 
 ::right::
 
@@ -275,13 +275,13 @@ layout: two-cols-header
 
 # ngrok, localtunnel などのサービス
 
-![tunnel](./assets/tunnel.svg)
+![tunnel](./assets/network/tunnel.svg)
 
 ---
 
 # 公開 IP アドレスを使う
 
-![port_forwarding](./assets/port_forwarding.svg)
+![port_forwarding](./assets/network/port_forwarding.svg)
 
 ---
 layout: two-cols-header
@@ -340,7 +340,7 @@ networks:
 
 # Docker コンテナーに接続できない？
 
-![docker_bridge_demo](./assets/docker_bridge_demo.svg)
+![docker_bridge_demo](./assets/network/docker_bridge_demo.svg)
 
 ---
 layout: center
