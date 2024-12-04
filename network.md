@@ -4,12 +4,7 @@ theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+title: ネットワーク
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
@@ -213,14 +208,14 @@ RFC 1918 で定義されている IP アドレス
 参考: [AWS VPC ルートテーブル](https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/VPC_Route_Tables.html)
 
 ---
-layout: center
----
+
+## layout: center
 
 # 謎を解く時間
 
 ---
-layout: two-cols-header
----
+
+## layout: two-cols-header
 
 # localhost アクセス？
 
@@ -230,10 +225,11 @@ layout: two-cols-header
   cat /etc/hosts
   <img class="w-3/4 h-60" alt="hosts" src="./assets/network/hosts.png" />
 
-  ifconfig
-  <img class="w-3/4" alt="loopback" src="./assets/network/loopback.png" />
+ifconfig
+<img class="w-3/4" alt="loopback" src="./assets/network/loopback.png" />
 
-  loopback はルーティング必要ない
+loopback はルーティング必要ない
+
 </div>
 
 ::right::
@@ -249,8 +245,8 @@ layout: two-cols-header
 </style>
 
 ---
-layout: two-cols-header
----
+
+## layout: two-cols-header
 
 # なぜロカールで webhook が使えない？
 
@@ -284,8 +280,9 @@ layout: two-cols-header
 ![port_forwarding](./assets/network/port_forwarding.svg)
 
 ---
-layout: two-cols-header
----
+
+## layout: two-cols-header
+
 # Docker コンテナーに接続できない？
 
 ::left::
@@ -303,7 +300,7 @@ services:
       - web_app1
 networks:
   web_app1:
-    driver: bridge  
+    driver: bridge
 ```
 ````
 
@@ -343,7 +340,7 @@ networks:
 ![docker_bridge_demo](./assets/network/docker_bridge_demo.svg)
 
 ---
-layout: center
----
+
+## layout: center
 
 # 終わり
