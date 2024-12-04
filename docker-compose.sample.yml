@@ -1,0 +1,33 @@
+services:
+  web_app1:
+    image: alpine:latest
+    tty: true
+    networks:
+      - web_app1
+  db1:
+    image: alpine:latest
+    tty: true
+    networks:
+      - web_app1
+  
+  web_app2:
+    image: alpine:latest
+    tty: true
+    networks:
+      - web_app2
+  db2:
+    image: alpine:latest
+    tty: true
+    networks:
+      - web_app2
+  redis2:
+    image: alpine:latest
+    tty: true
+    networks:
+      - web_app2
+
+networks:
+  web_app1:
+    driver: bridge
+  web_app2:
+    driver: bridge
